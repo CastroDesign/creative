@@ -1,0 +1,725 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.window-scroll {
+  background-color: #69e758;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  height: 10vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins' , sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 90%;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+i {
+  color: orange;
+}
+
+span {
+  color: #f09d02;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  z-index: 999;
+}
+
+header .menu {
+  width: 10%;
+}
+
+header .logo {
+  color: orange;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #e9a019;
+  width: 80%;
+  height: 100vh;
+  text-align: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+nav .close {
+  float: right;
+  margin: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul li {
+  padding: 2em;
+  margin: 1em;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.5em;
+}
+
+.hero {
+  margin-top: 6em;
+}
+
+.hero .hero-dec {
+  margin: 1.5em;
+  -webkit-animation: introLoad 1s ease-in;
+          animation: introLoad 1s ease-in;
+}
+
+.hero .hero-dec h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero .hero-dec p {
+  line-height: 1.5;
+}
+
+.hero .hero-dec button {
+  background-color: #3434a3;
+  padding: 12px;
+  width: 120px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin-top: 1em;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+}
+
+.hero .hero-dec button a {
+  color: white;
+}
+
+.hero .hero-dec button:hover {
+  background-color: transparent;
+  border: 2px solid #799be6;
+  -webkit-box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+          box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+  border-radius: 10px;
+}
+
+.hero .hero-dec button:hover a {
+  color: #eb8806;
+}
+
+.hero .hero-img {
+  background-color: #6de96d;
+  margin-top: 5em;
+}
+
+.product {
+  margin-top: 3rem;
+  padding-top: 2em;
+}
+
+.product .quality {
+  margin: 1.5em;
+}
+
+.product .quality h2 {
+  font-size: 2em;
+}
+
+.product .quality p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.product .data {
+  padding: 1rem;
+  margin: 1.5em;
+  margin-bottom: 2em;
+}
+
+.product .data a {
+  width: 200%;
+  color: orange;
+}
+
+.product .data h3 {
+  font-size: 1.2em;
+}
+
+.product .data p {
+  line-height: 1.5;
+}
+
+.product button {
+  background-color: #3434a3;
+  padding: 14px;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin-left: 2.5rem;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+}
+
+.product button a {
+  color: white;
+}
+
+.product button:hover {
+  background-color: transparent;
+  border: 2px solid #799be6;
+  -webkit-box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+          box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+  border-radius: 10px;
+}
+
+.product button:hover a {
+  color: #eb8806;
+}
+
+.presentation {
+  margin-top: 3em;
+}
+
+.presentation .present-desc {
+  margin: 2em;
+  line-height: 2;
+}
+
+.presentation .present-desc h2 {
+  font-size: 2em;
+}
+
+.presentation .present-desc button {
+  background-color: #3434a3;
+  padding: 14px;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin-top: 1em;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+}
+
+.presentation .present-desc button a {
+  color: white;
+}
+
+.presentation .present-desc button:hover {
+  background-color: transparent;
+  border: 2px solid #799be6;
+  -webkit-box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+          box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+  border-radius: 10px;
+}
+
+.presentation .present-desc button:hover a {
+  color: #eb8806;
+}
+
+.services {
+  background-color: #9bff9b;
+  background-size: cover;
+}
+
+.services h2 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.services p {
+  text-align: center;
+  font-size: 15px;
+  margin: 1em;
+}
+
+.services .service-desc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.services .service-desc .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 190px;
+  height: 150px;
+  margin: 10px auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 1rem 1rem 3rem #0a0a0a;
+          box-shadow: 1rem 1rem 3rem #0a0a0a;
+}
+
+.services .service-desc .box p {
+  color: orange;
+}
+
+.ourTeam {
+  margin-top: 3.5em;
+  padding-top: 2em;
+}
+
+.ourTeam .team-desc {
+  margin: 1.5em;
+}
+
+.ourTeam .team-desc h2 {
+  font-size: 2em;
+}
+
+.ourTeam .team-desc button {
+  background-color: #3434a3;
+  padding: 14px;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin-top: 1em;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+}
+
+.ourTeam .team-desc button a {
+  color: white;
+}
+
+.ourTeam .team-desc button:hover {
+  background-color: transparent;
+  border: 2px solid #799be6;
+  -webkit-box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+          box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+  border-radius: 10px;
+}
+
+.ourTeam .team-desc button:hover a {
+  color: #eb8806;
+}
+
+footer {
+  padding-top: 1em;
+}
+
+footer .logo {
+  margin: 1.5em;
+  color: orange;
+}
+
+footer .footer-1 {
+  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  margin: 1.5em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+footer .footer-1 a {
+  color: black;
+  font-size: 20px;
+}
+
+footer .footer-1 li {
+  list-style: none;
+  margin: 1em 1em;
+}
+
+footer .footer-2 {
+  margin: 1em;
+}
+
+footer .footer-2 .contact {
+  line-height: 3;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 480px) {
+  .services {
+    background-color: #9bff9b;
+  }
+  .services h2 {
+    text-align: center;
+    padding-top: 2em;
+  }
+  .services p {
+    text-align: center;
+    font-size: 15px;
+    margin: 1em;
+  }
+  .services .service-desc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .services .service-desc .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    width: 95%;
+    height: 190px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    -webkit-box-shadow: 1rem 1rem 3rem #0a0a0a;
+            box-shadow: 1rem 1rem 3rem #0a0a0a;
+  }
+  .services .service-desc .box p {
+    color: orange;
+  }
+  .services .service-desc .boc {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  footer {
+    padding-top: 1em;
+  }
+  footer .logo {
+    margin: 1.5em;
+    color: orange;
+  }
+  footer .footer-1 {
+    text-align: start;
+    display: -ms-grid;
+    display: grid;
+    margin: 1.5em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  nav {
+    position: unset;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: unset;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  nav ul li {
+    padding: 2px;
+    margin: 2px;
+  }
+  nav ul li a {
+    color: #0f0808;
+    font-size: 1em;
+  }
+  nav ul .lio {
+    display: none;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    z-index: 999;
+  }
+  header .menu {
+    width: 10%;
+    display: none;
+  }
+  header .logo {
+    color: orange;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 6em;
+  }
+  .hero .hero-img {
+    position: relative;
+    top: -100px;
+    background-color: #6de96d;
+    height: 90vh;
+    margin-top: 0em;
+    border-radius: 0em 0em 0em  50px;
+  }
+  .product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    margin: 0 1.5em;
+    padding-top: 2em;
+  }
+  .product .products .quality {
+    margin: 1.5em;
+  }
+  .product .products .quality h2 {
+    font-size: 2em;
+  }
+  .product .products .quality p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .product .products .data-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .product .products .data-container .data {
+    padding: 1rem;
+    margin: 0em;
+    margin-bottom: 2em;
+  }
+  .product .products .data-container .data a {
+    width: 100%;
+    color: orange;
+  }
+  .product .products .data-container .data h3 {
+    font-size: 1em;
+  }
+  .product .products .data-container .data p {
+    line-height: 1.5;
+  }
+  .product .products button {
+    background-color: #3434a3;
+    padding: 14px;
+    width: 110px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-top: 0em;
+    -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+            box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.767);
+    float: left;
+  }
+  .product .products button a {
+    color: white;
+  }
+  .product .products button:hover {
+    background-color: transparent;
+    border: 2px solid #799be6;
+    -webkit-box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+            box-shadow: 0 0 10px 0 #799be6 inset,0 0 10px 4px #799be6;
+    border-radius: 10px;
+  }
+  .product .products button:hover a {
+    color: #eb8806;
+  }
+  .presentation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
+  }
+  .services {
+    background-color: #9bff9b;
+    background-size: cover;
+    width: 100%;
+  }
+  .services h2 {
+    text-align: center;
+    padding-top: 2em;
+  }
+  .services p {
+    text-align: center;
+    font-size: 15px;
+    margin: 1em;
+  }
+  .services .service {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .services .service .service-desc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .services .service .service-desc .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    padding: 1em;
+    margin: 20px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 1rem 1rem 3rem #0a0a0a;
+            box-shadow: 1rem 1rem 3rem #0a0a0a;
+  }
+  .services .service .service-desc .box p {
+    color: orange;
+  }
+  .ourTeam {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 3.5em;
+    padding-top: 2em;
+  }
+  .ourTeam .team-desc {
+    margin-top: 3.5em;
+    padding: 2rem;
+  }
+  footer .footer-1 {
+    display: -ms-grid;
+    display: grid;
+    margin: 5em 2em;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .footer-1 a {
+    color: black;
+    font-size: 20px;
+  }
+  footer .footer-1 li {
+    list-style: none;
+    margin: 1em;
+  }
+  footer .footer-2 {
+    margin: 1.5em;
+  }
+  footer .footer-2 .contact {
+    line-height: 3;
+    font-size: 15px;
+  }
+  footer .footer-2 .contact-info {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 1530px) {
+  .product {
+    margin-top: 5rem;
+    padding-top: 5em;
+  }
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
